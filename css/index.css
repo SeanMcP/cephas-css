@@ -2,3 +2,7 @@
 
 @import './color.css';
 @import './type.css';
+
+#cephas {
+    margin: 1rem;
+}

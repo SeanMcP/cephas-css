@@ -1,4 +1,5 @@
 @import './type/headings.css';
+@import './type/text.css';
 
 #cephas {
     font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
