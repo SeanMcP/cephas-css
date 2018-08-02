@@ -1,35 +1,30 @@
-p,
-blockquote {
-    margin: 0.5rem 0;
-}
-
-p {
+#cephas p {
     line-height: 125%;
 }
 
-blockquote {
+#cephas blockquote {
     border-left: 2px solid var(--gray400);
     color: var(--gray800);
     padding: 0.25rem 1rem;
 }
 
-blockquote
+#cephas blockquote
 p {
     margin: 0;
 }
 
-blockquote
+#cephas blockquote
 p:not(:last-child) {
     margin-bottom: 0.5rem;
 }
 
-blockquote
+#cephas blockquote
 cite {
     font-style: italic;
     padding-top: 0.5rem;
 }
 
-blockquote
+#cephas blockquote
 cite::before {
     content: '—';
 }

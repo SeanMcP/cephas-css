@@ -1,3 +1,4 @@
+@import './type/code.css';
 @import './type/headings.css';
 @import './type/text.css';
 
@@ -6,4 +7,16 @@
     font-size: 16px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+#cephas blockquote,
+#cephas h1,
+#cephas h2,
+#cephas h3,
+#cephas h4,
+#cephas h5,
+#cephas h6,
+#cephas p,
+#cephas pre {
+    margin: 1rem 0;
 }

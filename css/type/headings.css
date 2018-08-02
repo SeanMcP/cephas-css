@@ -1,15 +1,15 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+#cephas h1,
+#cephas h2,
+#cephas h3,
+#cephas h4,
+#cephas h5,
+#cephas h6 {
     font-weight: bold;
 }
 
-h1 { font-size: 2rem }
-h2 { font-size: 1.75rem }
-h3 { font-size: 1.5rem }
-h4 { font-size: 1.25rem }
-h5 { font-size: 1.125rem }
-h6 { font-size: 1rem }
+#cephas h1 { font-size: 2rem }
+#cephas h2 { font-size: 1.75rem }
+#cephas h3 { font-size: 1.5rem }
+#cephas h4 { font-size: 1.25rem }
+#cephas h5 { font-size: 1.125rem }
+#cephas h6 { font-size: 1rem }
