@@ -1,0 +1,16 @@
+#cephas ol,
+#cephas ul {
+    margin: 1rem 0 1rem 1.5rem;
+}
+
+#cephas ol {
+    list-style-type: decimal;
+}
+
+#cephas ul {
+    list-style-type: disc;
+}
+
+#cephas li {
+    margin: 0.5rem;
+}

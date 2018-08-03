@@ -3,6 +3,11 @@
 @import './color.css';
 @import './type.css';
 
+/* Temporary styles */
 #cephas {
     margin: 1rem;
+}
+
+#cephas section {
+    padding: 1rem 0;
 }
