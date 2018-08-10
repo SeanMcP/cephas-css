@@ -1,0 +1,4 @@
+#cephas .fixed {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    position: fixed;
+}
