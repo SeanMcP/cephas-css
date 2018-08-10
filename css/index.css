@@ -1,13 +1,5 @@
 @import './reset.css';
 
 @import './color.css';
+@import './layout.css';
 @import './type.css';
-
-/* Temporary styles */
-#cephas {
-    margin: 1rem;
-}
-
-#cephas section {
-    padding: 1rem 0;
-}

@@ -1,0 +1,27 @@
+#cephas > section {
+    background: var(--default-bg);
+    padding: 2rem 0;
+    width: 100%;
+}
+
+#cephas > section.color {
+    background: var(--primary-bg);
+}
+
+#cephas > section > div {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+#cephas > section > div > *:first-child {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    #cephas >
+    section >
+    div {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
