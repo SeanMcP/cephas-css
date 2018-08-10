@@ -1,0 +1,6 @@
+#cephas {
+    --default-bg: white;
+    --primary-bg: var(--amber);
+    --secondary-bg: var(--gray);
+    --tertiary-bg: var(--gray800);
+}
