@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>⛰ Cephas Example</title>
@@ -7,72 +8,179 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../css/index.css" />
     <script src="../js/index.js"></script>
 </head>
+
 <body>
     <div id="cephas">
-        <section class="color">
+        <header>
             <div>
-                <h1>Text</h1>
+                <main>
+                    Test
+                </main>
+            </div>
+        </header>
+        <section class="primary">
+            <div>
+                <main>
+                    <h1>
+                        <code>type.css</code>
+                    </h1>
+                </main>
             </div>
         </section>
-        <h1><code>type.css</code></h1>
+        <section>
+            <div>
+                <aside>
+                    <h2>Aside</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam error cum tempore hic ex animi vitae quibusdam!
+                    </p>
+                </aside>
+                <main>
+                    <h1>Main</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, officia, laboriosam ducimus reiciendis temporibus sit
+                        dignissimos perferendis.
+                    </p>
+                </main>
+            </div>
+        </section>
+        <section>
+            <div>
+                <main>
+                    <h1>Main</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, officia, laboriosam ducimus reiciendis temporibus sit
+                        dignissimos perferendis.
+                    </p>
+                </main>
+                <aside>
+                    <h2>Aside</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam error cum tempore hic ex animi vitae quibusdam!
+                    </p>
+                </aside>
+            </div>
+        </section>
+        <section class="secondary">
+            <div>
+                <main>
+                    <h3>
+                        <code>headings.css</code>
+                    </h3>
+                </main>
+            </div>
+        </section>
         <section class="headings">
             <div>
-                <h3><code>headings.css</code></h3>
-                <h1>h1</h1>
-                <h2>h2</h2>
-                <h3>h3</h3>
-                <h4>h4</h4>
-                <h5>h5</h5>
-                <h6>h6</h6>
+                <main>
+                    <h1>h1</h1>
+                    <h2>h2</h2>
+                    <h3>h3</h3>
+                    <h4>h4</h4>
+                    <h5>h5</h5>
+                    <h6>h6</h6>
+                </main>
+            </div>
+        </section>
+        <section class="secondary">
+            <div>
+                <main>
+                    <h3>
+                        <code>text.css</code>
+                    </h3>
+                </main>
             </div>
         </section>
         <section class="text">
             <div>
-                <h3><code>text.css</code></h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore suscipit doloribus, nam, delectus esse odio deleniti voluptas laudantium totam dignissimos nobis quis sit ullam ipsa! Debitis omnis dolore voluptatum voluptatibus.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore suscipit doloribus, nam, delectus esse odio deleniti voluptas laudantium totam dignissimos nobis quis sit ullam ipsa! Debitis omnis dolore voluptatum voluptatibus.</p>
-                <blockquote cite="https://www.biblegateway.com/passage/?search=John+1%3A41-42&version=NKJV">
-                    <p>He first found his own brother Simon, and said to him, “We have found the Messiah” (which is translated, the Christ).</p>
-                    <p>And he brought him to Jesus. Now when Jesus looked at him, He said, “You are Simon the son of Jonah. You shall be called Cephas” (which is translated, A Stone).</p>
-                    <cite>John 1:41,42 NKJV</cite>
-                </blockquote>
+                <main>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore suscipit doloribus, nam, delectus
+                        esse odio deleniti voluptas laudantium totam dignissimos nobis quis sit ullam ipsa! Debitis omnis
+                        dolore voluptatum voluptatibus.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore suscipit doloribus, nam, delectus
+                        esse odio deleniti voluptas laudantium totam dignissimos nobis quis sit ullam ipsa! Debitis omnis
+                        dolore voluptatum voluptatibus.</p>
+                    <blockquote cite="https://www.biblegateway.com/passage/?search=John+1%3A41-42&version=NKJV">
+                        <p>He first found his own brother Simon, and said to him, “We have found the Messiah” (which is translated,
+                            the Christ).</p>
+                        <p>And he brought him to Jesus. Now when Jesus looked at him, He said, “You are Simon the son of Jonah.
+                            You shall be called Cephas” (which is translated, A Stone).</p>
+                        <cite>John 1:41,42 NKJV</cite>
+                    </blockquote>
+                </main>
+            </div>
+        </section>
+        <section class="secondary">
+            <div>
+                <main>
+                    <h3>
+                        <code>code.css</code>
+                    </h3>
+                </main>
             </div>
         </section>
         <section class="code">
             <div>
-                <h3><code>code.css</code></h3>
-                <p><code>Lorem, ipsum dolor</code> sit amet consectetur adipisicing elit. Inventore suscipit doloribus, nam, delectus esse odio deleniti voluptas laudantium totam dignissimos nobis quis sit ullam ipsa! Debitis omnis dolore voluptatum voluptatibus.</p>
-                <pre>
+                <main>
+                    <p>
+                        <code>Lorem, ipsum dolor</code> sit amet consectetur adipisicing elit. Inventore suscipit doloribus, nam,
+                        delectus esse odio deleniti voluptas laudantium totam dignissimos nobis quis sit ullam ipsa! Debitis
+                        omnis dolore voluptatum voluptatibus.</p>
+                    <pre>
 const capitalize = (string) => {
     return string[0].toUpperCase() + string.slice(1);
 }</pre>
+                </main>
+            </div>
+        </section>
+        <section class="secondary">
+            <div>
+                <main>
+                    <h3>
+                        <code>list.css</code>
+                    </h3>
+                </main>
             </div>
         </section>
         <section class="list">
             <div>
-                <h3><code>list.css</code></h3>
-                <ol>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti possimus in temporibus, modi aut repudiandae voluptas quos amet tempore.</li>
-                    <li>Ipsum</li>
+                <main>
+                    <ol>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti possimus in temporibus, modi aut
+                            repudiandae voluptas quos amet tempore.</li>
+                        <li>Ipsum</li>
+                        <ul>
+                            <li>Lorem</li>
+                            <li>Ipsum</li>
+                        </ul>
+                        <li>Another</li>
+                        <li>Another</li>
+                        <li>Another</li>
+                        <li>Another</li>
+                        <li>Another</li>
+                        <li>Another</li>
+                        <li>Another</li>
+                        <li>Another</li>
+                    </ol>
                     <ul>
-                        <li>Lorem</li>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti possimus in temporibus, modi aut
+                            repudiandae voluptas quos amet tempore.</li>
                         <li>Ipsum</li>
                     </ul>
-                    <li>Another</li>
-                    <li>Another</li>
-                    <li>Another</li>
-                    <li>Another</li>
-                    <li>Another</li>
-                    <li>Another</li>
-                    <li>Another</li>
-                    <li>Another</li>
-                </ol>
-                <ul>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti possimus in temporibus, modi aut repudiandae voluptas quos amet tempore.</li>
-                    <li>Ipsum</li>
-                </ul>
+                </main>
             </div>
         </section>
+        <footer>
+            <div>
+                <main>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aut, esse alias similique tempore id odit repellendus officiis
+                        magnam ut fuga dolore numquam accusamus natus unde vel rem excepturi ad?
+                    </p>
+                </main>
+            </div>
+        </footer>
     </div>
 </body>
+
 </html>

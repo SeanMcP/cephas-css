@@ -1,0 +1,11 @@
+#cephas > *.primary {
+    background: var(--primary-bg);
+}
+
+#cephas > *.secondary {
+    background: var(--secondary-bg);
+}
+
+#cephas > footer {
+    background: var(--tertiary-bg);
+}
