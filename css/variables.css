@@ -3,4 +3,5 @@
     --primary-bg: var(--amber);
     --secondary-bg: var(--gray);
     --tertiary-bg: var(--gray800);
+    --shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }

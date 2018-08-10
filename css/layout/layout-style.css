@@ -9,3 +9,14 @@
 #cephas > footer {
     background: var(--tertiary-bg);
 }
+
+#cephas > *.parallax,
+#cephas > *.window {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cephas > *.parallax {
+    background-attachment: fixed;
+}
