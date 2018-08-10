@@ -1,6 +1,6 @@
 #cephas ol,
 #cephas ul {
-    margin: 1rem 0 1rem 2rem;
+    margin: 1.5rem 0 0 2rem;
 }
 
 #cephas ol {
@@ -12,7 +12,7 @@
 }
 
 #cephas li {
-    margin: 0.5rem;
+    padding: 0.5rem;
 }
 
 #cephas ol > ol,

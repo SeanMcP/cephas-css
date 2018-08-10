@@ -5,7 +5,6 @@
 @import './type/list.css';
 @import './type/text.css';
 
-
 #cephas {
     font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-size: 20px;
@@ -21,6 +20,7 @@
 #cephas h5,
 #cephas h6,
 #cephas p,
-#cephas pre {
-    margin: 1rem 0;
+#cephas pre
+{
+    margin: 1.5rem 0 0;
 }
