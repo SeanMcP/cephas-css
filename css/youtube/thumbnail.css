@@ -1,0 +1,10 @@
+#cephas #youtube .list {
+    display: grid;
+    grid-gap: 1rem;
+    max-height: 400px;
+    overflow: scroll;
+}
+
+#cephas #youtube .thumbnail {
+    background-size: cover;
+}

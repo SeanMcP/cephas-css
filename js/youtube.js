@@ -1,7 +1,7 @@
 // youtube.js
 
 const channelId = 'UCeJ73ymlLhLctITwdi9iCVw';
-const currentVideoId;
+let currentVideoId;
 const output = document.getElementById('youtube');
 
 // fetch(
@@ -20,16 +20,48 @@ const buildVideoThumbnails = (videos) => {
     videos.forEach(video => {
         const thumbnail = document.createElement('div');
         thumbnail.classList.add('thumbnail');
-        // thumbnail.style.backgroundImage = video.snippet.thumbnails.medium.url;
-        const anchor = document.createElement('a');
-        anchor.textContent = video.snippet.title;
-        anchor.href = `https://www.youtube.com/watch?v=${video.id.videoId}`
-
-        thumbnail.appendChild(anchor);
+        thumbnail.style.backgroundImage = `url(${video.snippet.thumbnails.medium.url})`;
+        thumbnail.style.height = `${video.snippet.thumbnails.medium.height / 2}px`;
+        thumbnail.style.width = `${video.snippet.thumbnails.medium.width / 2}px`;
+        thumbnail.addEventListener('click', changeVideo(video.id.videoId));
         list.appendChild(thumbnail);
     });
 
     output.appendChild(list);
 }
 
+const changeVideo = (newVideoId) => () => {
+    currentVideoId = newVideoId;
+    updateVideoPlayer();
+}
+
+const createVideoPlayer = () => {
+    const player = document.createElement('iframe');
+    player.id = 'youtube-player';
+    player.width = '100%';
+    player.height = '400';
+    player.frameborder = '0';
+    player.allow = 'autoplay; encrypted-media';
+    player.allowfullscreen = true;
+
+    output.appendChild(player);
+}
+
+const updateVideoPlayer = () => {
+    const player = document.getElementById('youtube-player');
+    if (player) {
+        player.src = `https://www.youtube-nocookie.com/embed/${currentVideoId}?rel=0`;
+    } else {
+        createVideoPlayer();
+        updateVideoPlayer();
+    }
+}
+
+const setInitialVideo = (videos) => {
+    currentVideoId = videos[0].id.videoId;
+}
+
+setInitialVideo(mockYoutubeData.items);
+createVideoPlayer();
+updateVideoPlayer();
 buildVideoThumbnails(mockYoutubeData.items);

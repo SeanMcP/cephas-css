@@ -1,0 +1,6 @@
+#cephas #youtube {
+    display: grid;
+    grid-column-end: span 3;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr min-content;
+}
