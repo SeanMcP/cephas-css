@@ -61,7 +61,23 @@ const setInitialVideo = (videos) => {
     currentVideoId = videos[0].id.videoId;
 }
 
+const setSectionHeading = (data) => {
+    const headLink = document.createElement('a');
+    headLink.href = `https://www.youtube.com/channel/${channelId}`;
+    headLink.target = '_blank';
+    const icon = document.createElement('i');
+    icon.classList.add('fab', 'fa-2x', 'fa-youtube');
+    headLink.appendChild(icon);
+
+    const heading = document.createElement('h1');
+    heading.textContent = `/ ${data.items[0].snippet.channelTitle}`;
+    headLink.appendChild(heading);
+
+    output.appendChild(headLink);
+}
+
 setInitialVideo(mockYoutubeData.items);
+setSectionHeading(mockYoutubeData);
 createVideoPlayer();
 updateVideoPlayer();
 buildVideoThumbnails(mockYoutubeData.items);

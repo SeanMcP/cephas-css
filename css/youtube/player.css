@@ -4,3 +4,16 @@
     grid-gap: 1rem;
     grid-template-columns: 1fr min-content;
 }
+
+#cephas #youtube a {
+    align-items: center;
+    display: grid;
+    grid-column-end: span 2;
+    grid-gap: 0.5rem;
+    grid-template-columns: min-content 1fr;
+    text-decoration: none;
+}
+
+#cephas #youtube a h1 {
+    margin-top: 0;
+}
