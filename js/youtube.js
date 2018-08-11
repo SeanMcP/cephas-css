@@ -24,6 +24,12 @@ const buildVideoThumbnails = (videos) => {
         thumbnail.style.height = `${video.snippet.thumbnails.medium.height / 2}px`;
         thumbnail.style.width = `${video.snippet.thumbnails.medium.width / 2}px`;
         thumbnail.addEventListener('click', changeVideo(video.id.videoId));
+
+        const icon = document.createElement('i');
+        icon.classList.add('fas', 'fa-lg', 'fa-play');
+
+        thumbnail.appendChild(icon);
+
         list.appendChild(thumbnail);
     });
 
@@ -50,7 +56,9 @@ const createVideoPlayer = () => {
 const updateVideoPlayer = () => {
     const player = document.getElementById('youtube-player');
     if (player) {
-        player.src = `https://www.youtube-nocookie.com/embed/${currentVideoId}?rel=0`;
+        const newSrc = `https://www.youtube-nocookie.com/embed/${currentVideoId}?rel=0`;
+        if (player.src !== newSrc)
+            player.src = newSrc;
     } else {
         createVideoPlayer();
         updateVideoPlayer();

@@ -7,6 +7,7 @@
 
 #cephas #youtube a {
     align-items: center;
+    color: white;
     display: grid;
     grid-column-end: span 2;
     grid-gap: 0.5rem;
@@ -16,4 +17,12 @@
 
 #cephas #youtube a h1 {
     margin-top: 0;
+}
+
+#cephas #youtube a i.fa-youtube {
+    transition: all 100ms ease-in-out;
+}
+
+#cephas #youtube a:hover i.fa-youtube {
+    color: #FC0D1B;
 }

@@ -6,6 +6,10 @@
     background: var(--secondary-bg);
 }
 
+#cephas > *.dark {
+    background: var(--gray900);
+}
+
 #cephas > footer {
     background: var(--tertiary-bg);
 }
