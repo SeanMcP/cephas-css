@@ -9,7 +9,8 @@ const addPaddingForFixedHeader = () => {
 
     if (header) {
         const cephasDiv = document.getElementById('cephas');
-        cephasDiv.style.paddingTop = `${header.offsetHeight}px`;
+        if (cephasDiv)
+            cephasDiv.style.paddingTop = `${header.offsetHeight}px`;
     }
 }
 
@@ -25,4 +26,10 @@ const addGridColumns = () => {
     }
 }
 
-addStyles();
+// Onload
+
+const onload = () => {
+    addStyles();
+}
+
+onload();
