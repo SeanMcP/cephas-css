@@ -26,6 +26,25 @@ const addGridColumns = () => {
     }
 }
 
+// Modal
+
+const closeModal = (modalId) => {
+    const modal = document.getElementById(modalId);
+    modal.querySelector('.overlay').remove();
+    modal.classList.remove('show');
+}
+
+const openModal = (modalId) => {
+    const modal = document.getElementById(modalId);
+
+    const overlay = document.createElement('aside');
+    overlay.classList.add('overlay');
+    overlay.addEventListener('click', () => closeModal(modalId));
+    modal.appendChild(overlay);
+    
+    modal.classList.add('show');
+}
+
 // Onload
 
 const onload = () => {

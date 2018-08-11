@@ -1,0 +1,40 @@
+#cephas > .modal {
+    background: transparent;
+    bottom: 0;
+    align-items: center;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 5;
+}
+
+#cephas > .modal.show {
+    display: grid;
+}
+
+#cephas > .modal > .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#cephas > .modal > main {
+    background: var(--default-bg);
+    box-shadow: var(--shadow);
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 2rem;
+    z-index: 2;
+}
+
+@media screen and (max-width: 600px) {
+    #cephas > .modal > main {
+        margin: 2rem;
+    }
+}
