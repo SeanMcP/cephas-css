@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:200,200i,400,400i,700,700i');
+
+body {
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, Roboto, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* __SPACING__ */
+
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre {
+    margin: 1.5rem 0 0;
+}
+
+/* CODE */
+
+code,
+pre {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+    color: rgba(0, 0, 0, 0.65);
+    font-family: 'Source Code Pro', 'Menlo', 'Monaco', monospace;
+}
+
+code {
+    padding: 0.125rem 0.25rem;
+}
+
+pre {
+    padding: 1rem;
+    white-space: pre;
+    margin: 1rem 0;
+    overflow-x: scroll;
+}
+
+/* HEADINGS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+h1 { font-size: 2rem }
+h2 { font-size: 1.75rem }
+h3 { font-size: 1.5rem }
+h4 { font-size: 1.25rem }
+h5 { font-size: 1.125rem }
+h6 { font-size: 1rem }
+
+/* LISTS */
+
+ol,
+ul {
+    margin: 1.5rem 0 0 2rem;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+li {
+    padding: 0.5rem;
+}
+
+ol>ol,
+ol>ul,
+ul>ol,
+ul>ul {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* TEXT */
+
+p {
+    line-height: 150%;
+}
+
+blockquote {
+    border-left: 2px solid var(--gray400);
+    color: var(--gray800);
+    padding: 0.25rem 1rem;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+blockquote p:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+blockquote cite {
+    font-style: italic;
+    padding-top: 0.5rem;
+}
+
+blockquote cite::before {
+    content: '—';
+}
