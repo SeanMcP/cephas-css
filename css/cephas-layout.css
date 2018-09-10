@@ -1,0 +1,18 @@
+
+/*
+RESPONDER - A responsive class used for every
+top-level element to enforce positioning on
+desktop and mobile.
+*/
+
+#cephas .responder {
+    display: grid;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+@media screen and (max-width: 1000px) {
+    #cephas .responder {
+        margin: 0 1rem;
+    }
+}
